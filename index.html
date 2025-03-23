@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Rolao en Sierra de Outes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset y estilos base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Paleta de colores: verde oscuro, verde medio y acentos en verde claro */
+    :root {
+      --verde-oscuro: #2d4739;
+      --verde-medio: #3e6b56;
+      --verde-claro: #9ac3a6;
+      --fondo: #f5f5f5;
+    }
+    header {
+      background: url('casa_serradeoutes_SXT35282(c)XaimeCortizo.webp') no-repeat center center/cover;
+      position: relative;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(45, 71, 57, 0.6); /* Capa verdosa */
+    }
+    header h1 {
+      position: relative;
+      color: #fff;
+      font-size: 2.8rem;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+    }
+    nav {
+      background: var(--verde-oscuro);
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--verde-claro);
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    section {
+      margin-bottom: 60px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: var(--verde-oscuro);
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--verde-medio);
+      padding-bottom: 5px;
+    }
+    .info p, .info ul {
+      margin-bottom: 10px;
+    }
+    .info ul {
+      list-style: disc inside;
+      padding-left: 20px;
+    }
+    .tarifas {
+      background: var(--verde-medio);
+      color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    form {
+      margin-top: 20px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: var(--verde-oscuro);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: var(--verde-medio);
+    }
+    footer {
+      background: var(--verde-oscuro);
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      header {
+        height: 40vh;
+      }
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Casa en Sierra de Outes</h1>
+  </header>
+
+  <!-- Navegación -->
+  <nav>
+    <a href="#descripcion">Descripción</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#reserva">Reserva</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <!-- Galería de Imágenes -->
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="gallery">
+        <img src="casa_serradeoutes_SXT35282(c)XaimeCortizo.webp" alt="Vista 1 de la casa">
+        <img src="casa_serradeoutes_SXT35293(c)XaimeCortizo.webp" alt="Vista 2 de la casa">
+        <img src="casa_serradeoutes_SXT35347(c)XaimeCortizo.webp" alt="Vista 3 de la casa">
+        <img src="casa_serradeoutes_SXT35353(c)XaimeCortizo.webp" alt="Vista 4 de la casa">
+        <img src="casa_serradeoutes_SXT35407(c)XaimeCortizo.webp" alt="Vista 5 de la casa">
+        <img src="casa_serradeoutes_SXT35487(c)XaimeCortizo.webp" alt="Vista 6 de la casa">
+        <img src="casa_serradeoutes_SXT35571(c)XaimeCortizo.webp" alt="Vista 7 de la casa">
+        <img src="casa_serradeoutes_SXT35595(c)XaimeCortizo.webp" alt="Vista 8 de la casa">
+        <img src="casa_serradeoutes_SXT35608(c)XaimeCortizo.webp" alt="Vista 9 de la casa">
+        <img src="casa_serradeoutes_SXT35655(c)XaimeCortizo.webp" alt="Vista 10 de la casa">
+      </div>
+    </section>
+
+    <!-- Descripción -->
+    <section id="descripcion">
+      <h2>Descripción</h2>
+      <div class="info">
+        <p><strong>Ubicación:</strong> Sierra de Outes, provincia de La Coruña, a 5 minutos de Noia.</p>
+        <p><strong>Capacidad:</strong> Hasta 10 viajeros.</p>
+        <p><strong>Distribución:</strong> 5 dormitorios dobles (cada uno con baño privado), 7 camas y 5 baños más un aseo adicional.</p>
+        <p><strong>Características especiales:</strong> Llegada autónoma mediante cerradura inteligente, <em>Espiga Recomendación del Viajero</em> de Airbnb, y suelo radiante para una atmósfera acogedora.</p>
+        <p><strong>Plantas:</strong> En la planta principal se encuentra un luminoso salón-comedor con cocina equipada y acceso al jardín; la planta superior aloja los dormitorios.</p>
+      </div>
+    </section>
+
+    <!-- Servicios y Comodidades -->
+    <section id="servicios">
+      <h2>Servicios y Comodidades</h2>
+      <div class="info">
+        <h3>Confort y Entretenimiento</h3>
+        <ul>
+          <li>Wifi y conexión Ethernet</li>
+          <li>Televisión HD de 65" con Amazon Prime Video y Apple TV</li>
+          <li>Calefacción por suelo radiante</li>
+        </ul>
+        <h3>Cocina y Comedor</h3>
+        <ul>
+          <li>Cocina totalmente equipada: frigorífico, congelador, lavavajillas, horno, microondas, cafetera, tostadora, batidora, panificadora y utensilios básicos.</li>
+          <li>Mesa de comedor</li>
+        </ul>
+        <h3>Baños y Aseo</h3>
+        <ul>
+          <li>Productos de limpieza, champú, gel de ducha y secador de pelo</li>
+          <li>Toallas, sábanas, jabón, papel higiénico y perchas</li>
+        </ul>
+        <h3>Servicios Adicionales</h3>
+        <ul>
+          <li>Lavadora (gratis) y zona de lavandería</li>
+          <li>Vistas panorámicas: jardín, montaña, parque y costa</li>
+          <li>Aparcamiento gratuito: garaje residencial (3 plazas) y en la calle</li>
+          <li>Acceso compartido a la playa y a un lago mediante sendero o muelle</li>
+        </ul>
+        <h3>Para Familias</h3>
+        <ul>
+          <li>Cuna, trona y bañera para bebés (previa solicitud)</li>
+          <li>Libros, juguetes y utensilios para niños</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ubicación y Entorno -->
+    <section id="ubicacion">
+      <h2>Ubicación y Entorno</h2>
+      <div class="info">
+        <p>Disfruta de un entorno natural privilegiado en Sierra de Outes, donde se combinan las vistas panorámicas al jardín, montaña, parque y costa. A tan solo 5 minutos de Noia, podrás acceder a playas compartidas y lagos cercanos mediante senderos o muelles.</p>
+      </div>
+    </section>
+
+    <!-- Reserva y Tarifas -->
+    <section id="reserva">
+      <h2>Reserva y Tarifas</h2>
+      <div class="tarifas">
+        <p><strong>Precio por noche:</strong> 398€</p>
+        <p><strong>Fianza:</strong> 350€ (reembolsable tras revisión de limpieza)</p>
+        <p><strong>Estancias largas:</strong> 28 días o más</p>
+      </div>
+      <div class="info">
+        <p>Para reservar o solicitar más información, contáctanos y vive una experiencia inolvidable en Casa Rolao.</p>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="info">
+        <p><strong>Persona de contacto:</strong> Olivia</p>
+        <p><strong>Teléfono:</strong> 638025288</p>
+        <p><strong>Correo:</strong> <a href="mailto:casarolao@outlook.es">casarolao@outlook.es</a></p>
+        <p>O envíanos un mensaje usando el formulario:</p>
+        <form action="#" method="post">
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" required><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- Pie de Página -->
+  <footer>
+    <p>&copy; 2025 Casa Rolao - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
